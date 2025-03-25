@@ -21,10 +21,10 @@ class MolFODFT:
         self.HS_diabats = defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
         self.frags = ["dimer", "frag1", "frag2"]
 
-        os.makedirs("fodft", exist_ok=True) # Check curr directories
+        os.makedirs("fodft", exist_ok=True) # Check curr direct
         
 
-    def calculate_HS(self, xc: str, basis: str, **kwargs):
+    def calculate_HS(self, xc: str, basis: str, **kwargs): 
         """
         Calculate the Hamiltonian and Overlap matrices for the dimer and fragments
         """
