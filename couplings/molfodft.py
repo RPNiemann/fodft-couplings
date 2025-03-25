@@ -37,7 +37,7 @@ class MolFODFT:
 
             frag.pbc = [False, False, False] # Make sure PBC is turned off
 
-            frag.calc = GPAW(
+            frag.calc = GPAW( #asasda sd asd 
                 xc=xc,
                 mode='lcao', # LCAO mode
                 basis=basis,
@@ -46,7 +46,7 @@ class MolFODFT:
             )
 
             # Perform the calculation to get the potential energy
-            frag.get_potential_energy()
+            frag.get_potential_energy() #asdasd a s
             # Get the LCAO Hamiltonian and overlap matrices
             H_skMM, S_kMM = get_lcao_hamiltonian(frag.calc)
             H_MM = H_skMM[0][0] # Only use the first k-point and spin (molecular)
