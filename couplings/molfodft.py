@@ -14,7 +14,7 @@ class MolFODFT:
         Initialize Fragment-Orbital DFT object from a DimerObject (list)
         """
 
-        self.dimerobject = dimerobject
+        self.dimerobject = dimerobject # This is the dimerobject
         self.dimer_distance = scipy.linalg.norm(dimerobject.dimer_disp, 2)
 
         self.HS_matrices = defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
