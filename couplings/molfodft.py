@@ -21,7 +21,7 @@ class MolFODFT:
         self.HS_diabats = defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
         self.frags = ["dimer", "frag1", "frag2"]
 
-        os.makedirs("fodft", exist_ok=True)
+        os.makedirs("fodft", exist_ok=True) # Check curr directories
         
 
     def calculate_HS(self, xc: str, basis: str, **kwargs):
